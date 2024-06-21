@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'zabars';
+  src:url('fonts/zabars.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('img/background_el_pollo_loco.jpg');
+  font-family: 'zabars', Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  scale: 1.01;
+}
+
+h1 {
+  color: #ffc81d;
+  letter-spacing: 6px;
+  text-shadow: 8px 8px rgba(0, 0, 0, 0.6);
+  font-size: 72px;
+}
+
+h2 {
+  color: #ffc81d;
+  letter-spacing: 6px;
+  text-shadow: 8px 8px rgba(0, 0, 0, 0.6);
+  font-size: 72px;
+  margin-block-end: 0;
+}
+
+h3 {
+  color: #ffc81d;
+  letter-spacing: 6px;
+  text-shadow: 8px 8px rgba(0, 0, 0, 0.6);
+  font-size: 72px;
+  margin: 0;
+}
+
+a {
+  color: #160D28;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.icon_sreen_rotation {
+  width: 180px;
+}
+
+.display_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 320px;
+}
+
+canvas {
+  background-color: black;
+  border-radius: 20px;
+  display: block;
+}
+
+.start_screen_img {
+  height: 480px;
+  width: 720px;
+  border-radius: 20px;
+  position: absolute;
+  display: block;
+}
+
+.info_button {
+  position: absolute;
+  transform: translate(20px, 50px);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: unset;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #FA6400;
+}
+
+.controller_button {
+  position: absolute;
+  transform: translate(650px, 50px);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: unset;
+  background-color: #FA6400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controller_screen {
+  position: absolute;
+  width: 720px;
+  height: 480px;
+  background-color: #FA6400;
+  border-radius: 20px;
+}
+
+.controller {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.how_to_play {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+p {
+  padding-right: 16px;
+}
+
+.info_screen {
+  position: absolute;
+  width: 720px;
+  height: 480px;
+  background-color: #FA6400;
+  border-radius: 20px;
+}
+
+.controller_bottle {
+  width: 80px;
+}  
+
+.icon_close {
+  cursor: pointer;
+}
+
+.info_text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+}
+
+.start_button {
+  position: absolute;
+  transform: translate(280px, 50px);
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: unset;
+  font-size: 30px;
+  background-color: #FA6400;
+  font-family: 'zabars', Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+.icon_audio {
+  position: absolute;
+  transform: translate(330px, 20px);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.d_none {
+  display: none;
+}
+
+.game_over {
+  width: 720px;
+  height: 485px;
+  border-radius: 20px;
+  position: absolute;
+  transform: translate(0px, -485px);
+}
+
+.restart_button {
+  position: absolute;
+  transform: translate(280px, -420px);
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: unset;
+  font-size: 30px;
+  background-color: #FA6400;
+  font-family: 'zabars', Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+.you_win_img {
+  width: 720px;
+  height: 485px;
+  border-radius: 20px;
+  position: absolute;
+  transform: translate(0px, -485px);
+}
+
+.back_to_menu_button {
+  position: absolute;
+  transform: translate(270px, -400px);
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: unset;
+  font-size: 30px;
+  background-color: #FA6400;
+  font-family: 'zabars', Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+.salsa_bottle_img {
+  width: 50px;
+}
+
+.touch_btn {
+  border-radius: 50%;
+  border: unset;
+  background-color: #ffc81d;
+}
+
+.move_keys {
+  position: absolute;
+  transform: translate(10px, -60px);
+}
+
+.throw_and_jump_key {
+  position: absolute;
+  transform: translate(440px, -60px);
+}
+
+.landscape_modus {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.impressum {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-top: 8px;
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1100px) {
+    .landscape_modus {
+      display: unset;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+      display: none;
+    }
+
+    .impressum {
+      display: none;
+    }
+}
+
+@media (max-width: 939px) {
+    .landscape_modus {
+      display: none;
+    }
+
+    .start_screen_img {
+      height: 100%;
+      transform: translate(0px, 0px);
+    }
+
+    .controller_mobile {
+      display: unset;
+    }
+}  
+    
+
+/* Smartphones -------*/
+@media only screen and (max-width: 720px) {
+    canvas {
+        width: 100%;
+    }
+}
+
+/* Smartphones -------*/
+@media only screen and (max-height: 480px) {
+    canvas {
+        height: 100vh;
+    }
+}

@@ -10,6 +10,7 @@ class World {
   endbossBar = new EndbossBar();
   throwableObjects = [new ThrowableObject()];
   camera_x = 0;
+  isAttacking = false;
 
   /**
    * Constructor for the World class.
@@ -109,6 +110,7 @@ class World {
    */
   checkThrowableObjects() {
     if (this.keyboard.D && this.bottleBar.percentage > 0) {
+      this.isAttacking = true;
       let bottle = new ThrowableObject(
         this.character.x + 100,
         this.character.y + 100
@@ -116,6 +118,9 @@ class World {
       this.throwableObjects.push(bottle);
       this.bottleBar.percentage -= 10;
       this.bottleBar.setPercentage(this.bottleBar.percentage);
+      setTimeout(() => {
+        this.isAttacking = false;
+      }, 1500);
     }
   }
 
@@ -274,7 +279,7 @@ class World {
     }
 
     mo.draw(this.ctx);
-    mo.drawFrame(this.ctx);
+    // mo.drawFrame(this.ctx);
 
     if (mo.otherDirection) {
       this.flipImageBack(mo);

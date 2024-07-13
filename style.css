@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'zabars';
-  src:url('fonts/zabars.ttf') format('truetype');
+  font-family: "zabars";
+  src: url("fonts/zabars.ttf") format("truetype");
 }
 
 body {
@@ -8,8 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('img/background_el_pollo_loco.jpg');
-  font-family: 'zabars', Arial, Helvetica, sans-serif;
+  background-image: url("img/background_el_pollo_loco.jpg");
+  font-family: "zabars", Arial, Helvetica, sans-serif;
 }
 
 button:hover {
@@ -40,7 +40,7 @@ h3 {
 }
 
 a {
-  color: #160D28;
+  color: #160d28;
   text-decoration: none;
   letter-spacing: 2px;
 }
@@ -54,7 +54,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 320px;
 }
 
 canvas {
@@ -81,7 +80,7 @@ canvas {
   border: unset;
   font-size: 30px;
   font-weight: 700;
-  background-color: #FA6400;
+  background-color: #fa6400;
 }
 
 .controller_button {
@@ -92,7 +91,7 @@ canvas {
   cursor: pointer;
   border-radius: 50%;
   border: unset;
-  background-color: #FA6400;
+  background-color: #fa6400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +101,7 @@ canvas {
   position: absolute;
   width: 720px;
   height: 480px;
-  background-color: #FA6400;
+  background-color: #fa6400;
   border-radius: 20px;
 }
 
@@ -127,13 +126,13 @@ p {
   position: absolute;
   width: 720px;
   height: 480px;
-  background-color: #FA6400;
+  background-color: #fa6400;
   border-radius: 20px;
 }
 
 .controller_bottle {
-  width: 80px;
-}  
+  width: 50px;
+}
 
 .icon_close {
   cursor: pointer;
@@ -155,8 +154,8 @@ p {
   border-radius: 20px;
   border: unset;
   font-size: 30px;
-  background-color: #FA6400;
-  font-family: 'zabars', Arial, Helvetica, sans-serif;
+  background-color: #fa6400;
+  font-family: "zabars", Arial, Helvetica, sans-serif;
   letter-spacing: 3px;
 }
 
@@ -188,8 +187,8 @@ p {
   border-radius: 20px;
   border: unset;
   font-size: 30px;
-  background-color: #FA6400;
-  font-family: 'zabars', Arial, Helvetica, sans-serif;
+  background-color: #fa6400;
+  font-family: "zabars", Arial, Helvetica, sans-serif;
   letter-spacing: 3px;
 }
 
@@ -210,8 +209,8 @@ p {
   border-radius: 20px;
   border: unset;
   font-size: 30px;
-  background-color: #FA6400;
-  font-family: 'zabars', Arial, Helvetica, sans-serif;
+  background-color: #fa6400;
+  font-family: "zabars", Arial, Helvetica, sans-serif;
   letter-spacing: 3px;
 }
 
@@ -257,48 +256,85 @@ p {
   margin-top: 8px;
 }
 
-@media only screen and (min-width: 650px) and (max-width: 1100px) {
-    .landscape_modus {
-      display: unset;
-    }
+a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
-@media (max-width: 1000px) {
-    h1 {
-      display: none;
-    }
+@media (max-width: 1031px) {
+  h1 {
+    display: none;
+  }
 
-    .impressum {
-      display: none;
-    }
+  .impressum {
+    display: none;
+  }
 }
 
-@media (max-width: 939px) {
-    .landscape_modus {
-      display: none;
-    }
+@media only screen and (orientation: landscape) {
+  .landscape_modus {
+    display: none;
+  }
+  
+  canvas {
+    display: block;
+  }
+}
 
-    .start_screen_img {
-      height: 100%;
-      transform: translate(0px, 0px);
-    }
+@media only screen and (orientation: portrait) {
+  .landscape_modus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: unset;
+    width: 100vw;
+  }
 
-    .controller_mobile {
-      display: unset;
-    }
-}  
-    
+  #canvas {
+    display: none;
+  }
+
+  .icon_audio {
+    display: none;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  .impressum {
+    display: none;
+  }
+
+  #startScreen {
+    display: none;
+  }
+
+  .game_over {
+    display: none;
+  }
+}
 
 /* Smartphones -------*/
 @media only screen and (max-width: 720px) {
-    canvas {
-        width: 100%;
-    }
+  canvas {
+    width: 100%;
+  }
 }
 
 /* Smartphones -------*/
 @media only screen and (max-height: 480px) {
-    canvas {
-        height: 100vh;
-    }
+  canvas {
+    height: 100vh;
+  }
+
+  .start_screen_img {
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 0px;
+  }
 }

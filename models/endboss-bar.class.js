@@ -8,7 +8,7 @@ class EndbossBar extends Drawableobject {
     "./img/7_statusbars/2_statusbar_endboss/green/green100.png",
   ];
 
-  percentage = 100;
+  percentage = 80;
 
   /**
    * Constructor function for initializing EndbossBar properties.
@@ -23,7 +23,7 @@ class EndbossBar extends Drawableobject {
     this.y = 8;
     this.width = 200;
     this.height = 60;
-    this.setPercentage(100);
+    this.setPercentage(80);
   }
 
   /**
@@ -45,7 +45,7 @@ class EndbossBar extends Drawableobject {
    * @return {number} The index of the image based on the current percentage.
    */
   resolveImageIndex() {
-    if (this.percentage == 100) {
+    if (this.percentage == 80) {
       return 5;
     } else if (this.percentage > 80) {
       return 4;
@@ -59,4 +59,5 @@ class EndbossBar extends Drawableobject {
       return 0;
     }
   }
+
 }

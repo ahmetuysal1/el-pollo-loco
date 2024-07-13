@@ -24,7 +24,9 @@ function init() {
 function startGame() {
     document.getElementById('startScreen').style.display = 'none';
     document.getElementById('iconAudio').style.display = 'block';
+    document.getElementById('canvas').style.display = 'block';
     background_sound.play().then(() => this.playSound = true);
+    initLevel();
     init();
     bindBtnsPressEvent();
 }
@@ -186,7 +188,11 @@ function bindBtnsPressEvent() {
       keyboard.RIGHT = false;
     });
   
-    document.getElementById('btnThrow').addEventListener('touchstart', (e) => {
+
+if(screen.orientation.type == 'landscape-primary') {
+    rotateDeviceMessage.classList.add('d-none');
+;
+}    document.getElementById('btnThrow').addEventListener('touchstart', (e) => {
       e.preventDefault();
       keyboard.D = true;
     });

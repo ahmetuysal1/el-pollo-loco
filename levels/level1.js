@@ -1,18 +1,18 @@
-let level1 = levelOne();
+let level1;
 
 /**
  * Creates a level with chickens, clouds, background objects, coins, and bottles.
  *
  * @return {Level} The generated level
  */
-function levelOne() {
-   return new Level (
+function initLevel() {
+    level1 = new Level (
         [
         new Chicken(),
-        new Chicken(),
+        new ChickenSmall(),
         new Chicken(),
         new ChickenSmall(),
-        new ChickenSmall(),
+        new Chicken(),
         new ChickenSmall(),
         new Endboss(),
     ],
@@ -58,16 +58,16 @@ function levelOne() {
         new Coin(2000, 280),
     ],
     [
-        new Bottle(360, 350),
-        new Bottle(310, 350),
-        new Bottle(400, 350),
-        new Bottle(500, 350),
-        new Bottle(600, 350),
-        new Bottle(680, 350),
-        new Bottle(740, 350),
-        new Bottle(820, 350),
+        new Bottle(350, 350),
+        new Bottle(410, 350),
+        new Bottle(510, 350),
+        new Bottle(700, 350),
+        new Bottle(800, 350),
+        new Bottle(900, 350),
         new Bottle(1000, 350),
+        new Bottle(1200, 350),
         new Bottle(1500, 350),
+        new Bottle(1800, 350),
     ],
 );
 }

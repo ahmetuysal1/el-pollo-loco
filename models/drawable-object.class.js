@@ -45,7 +45,7 @@ class Drawableobject {
       this instanceof Coin
     ) {
       ctx.beginPath();
-      ctx.lineWidth = "3";
+      ctx.lineWidth = "";
       ctx.strokeStyle = "red";
       ctx.rect(
         this.x + this.offset.left,

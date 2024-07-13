@@ -32,9 +32,11 @@
     <div id="fullScreen">
         <div id="startScreen">
             <img class="start_screen_img" src="./img/9_intro_outro_screens/start/startscreen_2.png" alt="startscreen image">
+            <div class="buttons">
             <button id="startButton" class="start_button" onclick="startGame()">Start Game</button>
             <button id="infoButton" class="info_button" onclick="openInfo()">i</button>
             <button id="infoController" class="controller_button" onclick="controllerInfo()"><img src="./img/videogame_asset.svg" alt="icon_controller"></button>
+            </div>
         </div>
         <div class="info_screen d_none" id="infoScreen">
             <img onclick="closeInfo()" class="icon_close" src="./img/close.svg" alt="icon_close">
@@ -88,9 +90,9 @@
         <div class="impressum">
             <a href="impressum.html" target="_blank">Impressum</a>
         </div>
-        <div class="landscape_modus d_none" id="landscape">
+        <div class="landscape_modus d_none" id="rotateDeviceMessage">
             <div class="display_flex">
-                <img class="icon_sreen_rotation" src="./img/screen_rotation_48dp.svg" alt="icon_sreen_rotation">
+                <img class="icon_sreen_rotation" src="./img/screen_rotation_48dp.svg" alt="icon_screen_rotation">
                 <h2>Please Rotate your device</h2>
             </div>
         </div>

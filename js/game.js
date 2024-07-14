@@ -63,6 +63,7 @@ function playAudio() {
 function openInfo() {
     document.getElementById('infoScreen').style.display = 'block';
     document.getElementById('mobileController').style.display = 'none';
+    document.getElementById('buttonInfo').style.display = 'none';
 }
 
 /**
@@ -75,6 +76,7 @@ function closeInfo() {
     document.getElementById('infoScreen').style.display = 'none';
     document.getElementById('controllerScreen').style.display = 'none';
     document.getElementById('startScreen').style.display = 'block';
+    document.getElementById('buttonInfo').style.display = 'flex';
 }
 
 /**
@@ -97,6 +99,7 @@ function backToMenu() {
  */
 function controllerInfo() {
     document.getElementById('controllerScreen').style.display = 'block';
+    document.getElementById('buttonInfo').style.display = 'none';
 }
 
 /**

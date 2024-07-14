@@ -64,15 +64,12 @@ canvas {
 
 .start_screen_img {
   height: 480px;
-  width: 720px;
-  border-radius: 20px;
+  width: 720px;;
   position: absolute;
   display: block;
 }
 
 .info_button {
-  position: absolute;
-  transform: translate(20px, 50px);
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -84,8 +81,6 @@ canvas {
 }
 
 .controller_button {
-  position: absolute;
-  transform: translate(650px, 50px);
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -145,9 +140,16 @@ p {
   font-size: 48px;
 }
 
-.start_button {
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 720px;
   position: absolute;
-  transform: translate(280px, 50px);
+  padding-top: 1%;
+}
+
+.start_button {
   width: 160px;
   height: 40px;
   cursor: pointer;
@@ -269,6 +271,7 @@ a:hover {
   .impressum {
     display: none;
   }
+
 }
 
 @media only screen and (orientation: landscape) {
@@ -336,5 +339,32 @@ a:hover {
     bottom: 0;
     top: 0;
     border-radius: 0px;
+  }
+
+  .info_screen {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    left: 0;
+  }
+
+  .controller_screen {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    left: 0;
+  }
+
+  .game_over {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    left: 0;
+    right: 0;
+    transform: translate(0px, -100%);
+  }
+
+  .restart_button {
+    transform: translate(153%, -931%);
   }
 }

@@ -32,9 +32,9 @@
     <div id="fullScreen">
         <div id="startScreen">
             <img class="start_screen_img" src="./img/9_intro_outro_screens/start/startscreen_2.png" alt="startscreen image">
-            <div class="buttons">
-            <button id="startButton" class="start_button" onclick="startGame()">Start Game</button>
+            <div id="buttonInfo" class="buttons">
             <button id="infoButton" class="info_button" onclick="openInfo()">i</button>
+            <button id="startButton" class="start_button" onclick="startGame()">Start Game</button>
             <button id="infoController" class="controller_button" onclick="controllerInfo()"><img src="./img/videogame_asset.svg" alt="icon_controller"></button>
             </div>
         </div>
@@ -71,7 +71,9 @@
         <canvas id="canvas" width="720" height="480"></canvas>
          <div style="display: none;" id="gameOver">
             <img class="game_over" src="./img/9_intro_outro_screens/game_over/game over...png" alt="image_game_over">
+            <div>
             <button class="restart_button" id="restartButton" onclick="restartGame()">Restart</button>
+            </div>
         </div>
         <div class="d_none" id="youWin">
             <img class="you_win_img" src="./img/You won, you lost/You Win A.png" alt="image_you_win">

@@ -25,6 +25,11 @@ function startGame() {
     document.getElementById('startScreen').style.display = 'none';
     document.getElementById('iconAudio').style.display = 'block';
     document.getElementById('canvas').style.display = 'block';
+    if (window.innerWidth < 1100){
+        document.getElementById('mobileController').style.display = 'block';
+    } else {
+        document.getElementById('mobileController').style.display = 'none';
+    }
     background_sound.play().then(() => this.playSound = true);
     initLevel();
     init();
